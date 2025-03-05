@@ -1,6 +1,6 @@
-body{
-    display:grid;
-    grid-template-rows: auto1fr auto;
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
     min-height: 100vh;
     font-family: Arial, sans-serif;
     margin: 0;
