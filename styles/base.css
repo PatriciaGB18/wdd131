@@ -83,7 +83,7 @@ main {
 
 .card {
     display: flex;
-    align-items: center; /* Centraliza verticalmente os itens */
+    align-items: center;
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -91,11 +91,11 @@ main {
 }
 
 .card.left {
-    flex-direction: row; /* Imagem à esquerda, texto à direita */
+    flex-direction: row; 
 }
 
 .card.right {
-    flex-direction: row-reverse; /* Imagem à direita, texto à esquerda */
+    flex-direction: row-reverse; 
 }
 
 .card img {
@@ -112,12 +112,12 @@ main {
 }
 
 .card p {
-    margin: 0; /* Remove a margem padrão do parágrafo */
-    text-align: left; /* Alinha o texto à esquerda */
+    margin: 0; 
+    text-align: left; 
 }
 
 .card h2 {
-    width: 100%; /* Ocupa a largura total do card */
+    width: 100%; 
     text-align: center;
 }
 
@@ -128,7 +128,7 @@ main {
 
     .card {
         flex-direction: column;
-        text-align: center; /* Centraliza o texto no modo mobile */
+        text-align: center; 
     }
 
     .card img {
@@ -137,6 +137,6 @@ main {
     }
 
     .card p {
-        text-align: center; /* Centraliza o texto no modo mobile */
+        text-align: center; 
     }
 }
