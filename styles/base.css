@@ -1,0 +1,142 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #023047;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #219ebc;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #ffb703;
+    color: #023047;
+}
+
+/* Footer */
+footer {
+    background-color: #219ebc;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card.left {
+    flex-direction: row; /* Imagem à esquerda, texto à direita */
+}
+
+.card.right {
+    flex-direction: row-reverse; /* Imagem à direita, texto à esquerda */
+}
+
+.card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.card.right img {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.card p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.card h2 {
+    width: 100%; /* Ocupa a largura total do card */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center; /* Centraliza o texto no modo mobile */
+    }
+
+    .card img {
+        max-width: 150px;
+        margin: 0 auto 20px;
+    }
+
+    .card p {
+        text-align: center; /* Centraliza o texto no modo mobile */
+    }
+}
