@@ -20,7 +20,6 @@ header {
 p {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-
 }
 
 h1 {
@@ -51,7 +50,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: black; 
     font-weight: bold;
     padding: 10px 15px;
     transition: background 0.3s, color 0.3s;
@@ -60,13 +59,13 @@ nav a {
 
 nav a:hover {
     background-color: #ffb703;
-    color: #023047;
+    color: black; 
 }
 
 /* Footer */
 footer {
     background-color: #219ebc;
-    color: white;
+    color: black; 
     padding: 10px;
     margin-top: 20px;
 }
