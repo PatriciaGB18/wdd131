@@ -1,0 +1,126 @@
+/* Estilizando o cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A3D2CA;
+    padding: 10px 20px;
+    position: relative;
+}
+
+/* Estilizando o menu */
+nav {
+    display: none;  /* Oculta o menu no mobile por padrão */
+    flex-direction: column;
+    background-color: #A3D2CA;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 9999; /* Garante que o menu fique acima do conteúdo */
+    padding: 10px 0;
+    margin-top: 10px; /* Adiciona espaçamento no topo */
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #819b97;
+    color: black;
+}
+
+/* O menu abre com a classe .open */
+nav.open {
+    display: flex;
+}
+
+/* Estilo do botão do hambúrguer */
+.hamburger {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Esconde o hambúrguer em telas grandes */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;  /* Esconde o hambúrguer */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row; /* Menu horizontal em telas grandes */
+        position: static; /* Remove a posição absoluta */
+        background: none; /* Remove o fundo */
+    }
+
+    nav a {
+        padding: 10px 15px;
+    }
+}
+
+/* Estilo para o corpo */
+body {
+    background-color: #E4F5F2;
+}
+
+/* Estilo do botão */
+button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+header h1 {
+    white-space: nowrap;  /* Impede que o texto quebre para uma nova linha */
+
+    text-overflow: ellipsis; /* Exibe '...' caso o texto ultrapasse os limites */
+}
+
+/* Responsividade do menu */
+@media (max-width: 768px) {
+    /* Esconde o menu inicialmente no mobile */
+    nav.hidden {
+        display: none;
+    }
+
+    /* Quando o menu está aberto */
+    nav.open {
+        display: flex;
+    }
+}
+
+.temple-grid figure {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .temple-grid img {
+    width: 100%; /* Faz com que a largura da imagem ocupe 100% do seu contêiner */
+    height: 200px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Faz com que a imagem cubra o espaço sem distorcer */
+    border-radius: 10px; /* Mantém a borda arredondada */
+}
+/* Ajustes no rodapé */
+footer {
+    background-color: #66B3B4;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}

@@ -1,0 +1,47 @@
+/* Estilizando o cabeçalho para telas grandes */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A3D2CA;
+    padding: 10px 20px;
+}
+
+/* Menu visível para telas grandes */
+nav {
+    background-color: #A3D2CA;
+    padding: 10px 0;
+    justify-content: flex-end; /* Alinha os itens à esquerda */
+    margin-left: 100px;
+    gap: 15px; /* Espaço entre os itens */
+}
+
+/* Estilo dos links no menu */
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #819b97;
+    color: black;
+}
+
+/* Ajusta o layout do grid para telas grandes */
+.temple-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas para desktops */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estiliza as imagens dentro do grid */
+.temple-grid img {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+

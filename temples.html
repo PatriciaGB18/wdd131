@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="styles/temples.css"> <!-- Estilos para dispositivos móveis -->
+  <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)"> <!-- Estilos para telas grandes -->  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="hamburger" class="hamburger">☰</button>
+    <nav id="nav-menu" class="hidden">
+        <a href="#">Home</a>
+        <a href="#">Old</a>
+        <a href="#">New</a>
+        <a href="#">Large</a>
+        <a href="#">Small</a>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="temple-grid">
+      <figure>
+        <img src="images/laie-temple.jpg" alt="Laie Temple">
+        <figcaption>Laie Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/logan-temple.jpg" alt="logan Temple ">
+        <figcaption>Logan Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/meridian-temple.jpg" alt="Meridiam Temple">
+        <figcaption>Meridian Temple </figcaption>
+      </figure>
+      <figure>
+        <img src="images/portland-temple.jpg" alt="Portland Temple">
+        <figcaption>Portland Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/provo-city-center-temple.jpg" alt="Provo Temple">
+        <figcaption>Provo Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/san-diego-temple.jpg" alt="San Diego Temple">
+        <figcaption>San Diego Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/timpanogos-temple.jpg" alt="Timpagonos Temple">
+        <figcaption>Timpagonos Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/washington-dc-temple.jpg" alt="Washington-DC Temple">
+        <figcaption>Washington-DC Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Temple Album</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/temples.js"></script>  <!-- Adicionando o JavaScript -->
+</body>
+</html>
