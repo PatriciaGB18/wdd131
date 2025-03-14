@@ -1,0 +1,50 @@
+/* Estilos para telas grandes (desktop) */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A3D2CA;
+    padding: 10px 20px;
+    position: relative;
+    margin-bottom: 20px;  /* Isso ajuda a garantir que o conteúdo não seja sobreposto */
+}
+  nav a {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  
+  /* Oculta o botão do menu hamburguer no desktop */
+  .hamburger {
+    display: none;
+  }
+  
+  /* Estiliza o conteúdo principal para um layout em grade */
+  .temple-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas para desktops */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .temple-grid figure {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .temple-grid img {
+    width: 100%; /* Faz com que a largura da imagem ocupe 100% do seu contêiner */
+    height: 200px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Faz com que a imagem cubra o espaço sem distorcer */
+    border-radius: 10px; /* Mantém a borda arredondada */
+}
+
+  /* Ajusta o rodapé */
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  

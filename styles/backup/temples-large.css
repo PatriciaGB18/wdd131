@@ -1,4 +1,4 @@
-
+/* Estilizando o cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
@@ -6,21 +6,26 @@ header {
     background-color: #A3D2CA;
     padding: 10px 20px;
     position: relative;
+    margin-bottom: 20px;  /* Isso ajuda a garantir que o conteúdo não seja sobreposto */
 }
 
-
+/* Estilizando o menu */
 nav {
-    display: none;  
+    display: none;  /* Oculta o menu no mobile por padrão */
     flex-direction: column;
-    background-color: #A3D2CA;
+    background-color: #66B3B4;
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
     text-align: center;
-    z-index: 9999; 
+    z-index: 9999; /* Garante que o menu fique acima do conteúdo */
     padding: 10px 0;
-    margin-top: 10px; 
+    margin-top: 10px; /* Adiciona espaçamento no topo */
+}
+
+body.menu-open {
+    padding-top: 60px; /* Empurra o conteúdo para baixo quando o menu é aberto */
 }
 
 nav a {
@@ -31,15 +36,13 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #819b97;
+    background-color: #ff6f61;
     color: black;
 }
-
 
 nav.open {
     display: flex;
 }
-
 
 .hamburger {
     font-size: 24px;
@@ -50,29 +53,25 @@ nav.open {
     padding: 10px;
 }
 
-
 @media (min-width: 768px) {
     .hamburger {
-        display: none;  
+        display: none;
     }
 
     nav {
         display: flex;
-        flex-direction: row; 
-        position: static; 
-        background: none; 
+        flex-direction: row;
+        position: static;
+        background: none;
     }
 
     nav a {
         padding: 10px 15px;
     }
 }
-
-
 body {
     background-color: #E4F5F2;
 }
-
 button {
     border: none;
     padding: 10px 20px;
@@ -82,44 +81,20 @@ button {
 }
 
 button:hover {
-    background-color: #333333;
+    background-color: #333333; 
 }
-
-header h1 {
-    white-space: nowrap; 
-
-    text-overflow: ellipsis; 
-}
-
-
 @media (max-width: 768px) {
-    
+    /* Esconde o menu inicialmente no mobile */
     nav.hidden {
         display: none;
     }
 
-    
+    /* Quando o menu está aberto */
     nav.open {
         display: flex;
     }
 }
-
-.temple-grid figure {
-    background: #f0f0f0;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  .temple-grid img {
-    width: 100%; 
-    height: 200px; 
-    object-fit: cover; 
-    border-radius: 10px; 
+footer{
+    background-color:#66B3B4; 
 }
 
-footer {
-    background-color: #66B3B4;
-    text-align: center;
-    padding: 20px;
-    color: white;
-}
