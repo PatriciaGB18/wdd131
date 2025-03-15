@@ -45,7 +45,7 @@ nav.open {
     font-size: 24px;
     background: none;
     border: none;
-    color: white;
+    color: black;
     cursor: pointer;
     padding: 10px;
 }
@@ -121,5 +121,5 @@ footer {
     background-color: #66B3B4;
     text-align: center;
     padding: 20px;
-    color: white;
+    color: black;
 }
