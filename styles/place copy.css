@@ -1,0 +1,146 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background.jpg'); /* Caminho da imagem de fundo */
+    background-size: contain; /* Use 'contain' para ajustar a imagem à tela */
+    background-repeat: no-repeat; /* Evite repetição da imagem */
+    background-position: center; /* Centralize a imagem */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1d661d; /* Cor verde */
+    color: white;
+    text-align: center;
+    width: 100%;
+    color: #f5e067; 
+}
+/* Layout Principal */
+main {
+    position: relative;
+    margin-top: 20px;
+}
+/* Painéis */
+.panel {
+    background-color: rgba(255, 255, 255, 0.9); /* Branco translúcido */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: absolute;
+    margin-left: 25px;
+    background-color: #dbe0a9; /* Cor verde */
+}
+/* Place Info à Esquerda */
+#place-info {
+    top: 50px; /* Alinhado ao topo */
+    left: 90px; /* Posicionado à esquerda */
+}
+
+/* Weather mais abaixo à Direita */
+#weather {
+    top: 500px; /* Mais abaixo */
+    right: 40px; /* Posicionado à direita */
+}
+/* Ícone de Clima */
+.weather-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+/* Contêiner da imagem do clima */
+.weather-image-container {
+    
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 20px; /* Espaçamento entre a imagem e o título */
+    background-color: #1d661d; /* Cor verde */
+    border-radius: 8px;
+    padding: 10px; /* Ajuste interno, caso necessário */
+    width: 220px; /* Diminui a largura do contêiner */
+    margin-left: -70px; /* Move o contêiner mais à esquerda */
+}
+/* Caso queira aplicar apenas ao h2 dentro de weather-image-container */
+.weather-image-container h2 {
+    color: #f5e067; 
+}
+.place-info-image-container{
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 20px; /* Espaçamento entre a imagem e o título */
+    background-color: #1d661d; /* Cor verde */
+    border-radius: 8px;
+    padding: 10px; /* Ajuste interno, caso necessário */
+    width: 220px; /* Diminui a largura do contêiner */
+    margin-left: -70px; /* Move o contêiner mais à esquerda */
+}
+.place-info-image-container{
+    color: #f5e067; 
+}
+/* Rodapé */
+footer {
+    background-color: #1d661d; /* Cor verde */
+    color: #f5e067; 
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Ajustes para telas pequenas */
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column; /* Reorganiza os itens em coluna */
+        padding: 10px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column; /* Os elementos são empilhados */
+        align-items: center; /* Centraliza os itens */
+        gap: 20px; /* Espaçamento entre os painéis */
+    }
+
+    /* Painéis gerais */
+    .panel {
+        position: static; /* Remove o posicionamento absoluto */
+        width: 150%; /* Ocupa toda a largura disponível */
+      
+        box-shadow: none; /* Remove o sombreamento */
+    }
+
+    /* Contêiner de Place Info */
+    .place-info-image-container {
+        display: flex;
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        gap: 10px; /* Espaçamento entre itens */
+        background-color: #1d661d; /* Cor verde */
+        border-radius: 8px; /* Bordas arredondadas */
+        padding: 15px; /* Espaçamento interno */
+        width: 100%; /* Ajusta à largura do painel */
+        margin-left: -15px; /* Move o contêiner mais à esquerda */
+    }
+
+    /* Contêiner de Weather */
+    .weather-image-container {
+        display: flex;
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        gap: 10px; /* Espaçamento entre a imagem e o texto */
+        background-color: #1d661d; /* Cor verde */
+        border-radius: 8px; /* Bordas arredondadas */
+        padding: 15px;
+        width: 100%; /* Ajusta à largura do painel */
+        margin-left: -15px; /* Move o contêiner mais à esquerda */
+    }
+
+}
+

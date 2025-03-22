@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/background.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #1d661d;
+    color: white;
+    text-align: center;
+    width: 100%;
+    color: #f5e067;
+}
+
+main {
+    position: relative;
+    margin-top: 20px;
+}
+
+.panel {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: absolute;
+    margin-left: 25px;
+    background-color: #dbe0a9;
+}
+
+#place-info {
+    top: 50px;
+    left: 90px;
+}
+
+#weather {
+    top: 500px;
+    right: 40px;
+}
+
+.weather-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.weather-image-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #1d661d;
+    border-radius: 8px;
+    padding: 10px;
+    width: 220px;
+    margin-left: -70px;
+}
+
+.weather-image-container h2 {
+    color: #f5e067;
+}
+
+.place-info-image-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #1d661d;
+    border-radius: 8px;
+    padding: 10px;
+    width: 220px;
+    margin-left: -70px;
+}
+
+.place-info-image-container {
+    color: #f5e067;
+}
+
+footer {
+    background-color: #1d661d;
+    color: #f5e067;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .panel {
+        position: static;
+        width: 90%;
+        margin-right: 20px;
+        box-shadow: none;
+    }
+
+    .place-info-image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #1d661d;
+        border-radius: 8px;
+        padding: 15px;
+        width: 100%;
+        margin-left: -15px;
+    }
+
+    .weather-image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #1d661d;
+        border-radius: 8px;
+        padding: 15px;
+        width: 100%;
+        margin-left: -15px;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .hero picture {
+        width: 100%;
+    }
+}
