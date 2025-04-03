@@ -153,5 +153,6 @@ function displayTemples(templesArray) {
     });
 }
 
+
 });
 
