@@ -56,8 +56,12 @@ select, input, textarea {
     margin-top: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    color: black;
     
 }
+
+  
+  
 
 button {
     background-color: #000;
@@ -72,7 +76,7 @@ button {
 }
 
 button:hover {
-    background-color: #444;
+    background-color: #49494a;
 }
 
 
@@ -143,3 +147,8 @@ footer {
     width: 400px; 
     border-radius: 10px; 
 }
+select option[disabled] {
+    color: #33045d !important; /* cinza escuro visível */
+    background-color: white !important; /* garante fundo claro */
+  }
+  
