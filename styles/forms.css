@@ -148,7 +148,7 @@ footer {
     border-radius: 10px; 
 }
 select option[disabled] {
-    color: #33045d !important; /* cinza escuro visível */
-    background-color: white !important; /* garante fundo claro */
+    color: #33045d !important; 
+    background-color: white !important;
   }
   
